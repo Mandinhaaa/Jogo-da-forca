@@ -178,7 +178,7 @@ const palavras = [
     categoria: "GÊNERO MUSICAL",
   }),
   (palavra043 = {
-    nome: "SaMBA",
+    nome: "SAMBA",
     categoria: "GÊNERO MUSICAL",
   }),
   (palavra044 = {
@@ -330,8 +330,81 @@ const palavras = [
     categoria: "TECNOLOGIA",
   }),
   (palavra082 = {
-    nome: "IMPRESSORA 3D",
-    categoria: "TECNOLOGIA",
+    nome: "ELEFANTE",
+    categoria: "ANIMAL",
+  }),
+  (palavra083 = {
+    nome: "GIRRAFA",
+    categoria: "ANIMAL",
+  }),
+  (palavra084 = {
+    nome: "MACACO",
+    categoria: "ANIMAL",
+  }),
+  (palavra085 = {
+    nome: "CACHORRO",
+    categoria: "ANIMAL",
+  }),
+  (palavra086 = {
+    nome: "GATO",
+    categoria: "ANIMAL",
+  }),
+  (palavra087 = {
+    nome: "PAPAGAIO",
+    categoria: "ANIMAL",
+  }),
+  (palavra088 = {
+    nome: "COELHO",
+    categoria: "ANIMAL",
+  }),
+  (palavra089 = {
+    nome: "TARTARUGA",
+    categoria: "ANIMAL",
+  }),
+  (palavra090 = {
+    nome: "GUEPARDO",
+    categoria: "ANIMAL",
+  }),
+  (palavra091 = {
+    nome: "LASANHA",
+    categoria: "COMIDA",
+  }),
+  (palavra092 = {
+    nome: "SUSHI",
+    categoria: "COMIDA",
+  }),
+  (palavra093 = {
+    nome: "CACHORRO QUENTE",
+    categoria: "COMIDA",
+  }),
+  (palavra094 = {
+    nome: "FUNDUE",
+    categoria: "COMIDA",
+  }),
+  (palavra095 = {
+    nome: "CHOCOLATE",
+    categoria: "COMIDA",
+  }),
+  (palavra096 = {
+    nome: "SALADA",
+    categoria: "COMIDA",
+  })(
+    (palavra097 = {
+      nome: "SORVETE",
+      categoria: "COMIDA",
+    })
+  ),
+  (palavra098 = {
+    nome: "ESPAGUETE",
+    categoria: "COMIDA",
+  }),
+  (palavra099 = {
+    nome: "COXINHA",
+    categoria: "COMIDA",
+  }),
+  (palavra100 = {
+    nome: "PIPOCA",
+    categoria: "COMIDA",
   }),
 ];
 
@@ -410,7 +483,7 @@ async function comparaListas(letra) {
     tentativas--;
     mudarStyleLetraErrada("tecla-" + letra);
     if (tentativas == 0) {
-      if (pontuacao < 0) {
+      if (pontuacao > 0) {
         pontuacao -= 20;
       }
       abreModal(
@@ -470,6 +543,7 @@ async function piscarBotao() {
     await atraso(400);
   }
   document.getElementById("btnReiniciar").style.background = roxo;
+  document.getElementById("btnReiniciar").style.scale = 1.0;
 }
 
 async function atraso(tempo) {
