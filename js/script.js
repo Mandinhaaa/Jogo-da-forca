@@ -421,7 +421,7 @@ async function comparaListas(letra) {
           pontuacao +
           " pontos"
       );
-
+      jogarNovamente = true;
       piscarBotao();
     }
   } else {
@@ -447,6 +447,7 @@ async function comparaListas(letra) {
         pontuacao +
         " pontos"
     );
+    jogarNovamente = true;
     tentativas = 0;
     piscarBotao();
   }
@@ -468,6 +469,7 @@ async function piscarBotao() {
     document.getElementById("btnReiniciar").style.scale = 1.1;
     await atraso(400);
   }
+  document.getElementById("btnReiniciar").style.background = roxo;
 }
 
 async function atraso(tempo) {
@@ -532,6 +534,8 @@ function inicio() {
 
 let btnReiniciar = document.querySelector("#btnReiniciar");
 btnReiniciar.addEventListener("click", function () {
+  jogarNovamente = false;
+
   for (let i = 0; i < limparLetras.length; i++) {
     const element = limparLetras[i];
     document.getElementById("tecla-" + element).style.background = roxo;
