@@ -388,12 +388,11 @@ const palavras = [
   (palavra096 = {
     nome: "SALADA",
     categoria: "COMIDA",
-  })(
-    (palavra097 = {
-      nome: "SORVETE",
-      categoria: "COMIDA",
-    })
-  ),
+  })
+  (palavra097 = {
+    nome: "SORVETE",
+    categoria: "COMIDA",
+  }),
   (palavra098 = {
     nome: "ESPAGUETE",
     categoria: "COMIDA",
