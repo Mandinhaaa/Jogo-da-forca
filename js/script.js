@@ -270,7 +270,7 @@ const palavras = [
     categoria: "PROFISSÃO",
   }),
   (palavra066 = {
-    nome: "ADVOCADO",
+    nome: "ADVOGADO",
     categoria: "PROFISSÃO",
   }),
   (palavra067 = {
@@ -388,7 +388,7 @@ const palavras = [
   (palavra096 = {
     nome: "SALADA",
     categoria: "COMIDA",
-  })
+  }),
   (palavra097 = {
     nome: "SORVETE",
     categoria: "COMIDA",
