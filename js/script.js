@@ -334,7 +334,7 @@ const palavras = [
     categoria: "ANIMAL",
   }),
   (palavra083 = {
-    nome: "GIRRAFA",
+    nome: "GIRAFA",
     categoria: "ANIMAL",
   }),
   (palavra084 = {
